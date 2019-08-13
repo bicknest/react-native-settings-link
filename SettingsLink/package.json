@@ -1,0 +1,15 @@
+
+{
+  "name": "react-native-settings-link",
+  "version": "1.0.0",
+  "description": "A bridge to native code that allows the opening of different settings in app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Nick Best",
+  "license": "MIT"
+}
