@@ -31,10 +31,10 @@ and then call one of the methods, e.g.
 
 RNSettingsLink.locationSourceSettings();
 
-or to get access to Android's location settings. Good for when you want the user
+or to get access to Androids location settings. Good for when you want the user
 to enable their phone's location.
 
 RNSettingsLink.appDetailsSettings();
 
-to open activity to make changes to your app's settings. This is good if you are asking
+to open activity to make changes to your apps settings. This is good if you are asking
 your user to change permissions for your application.
