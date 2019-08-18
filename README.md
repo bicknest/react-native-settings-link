@@ -5,19 +5,8 @@
 
 `$ npm install react-native-settings-link --save`
 
-### Mostly automatic installation
-
-`$ react-native link react-native-settings-link`
-
 ### Manual installation
 
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-settings-link` and add `RNSettingsLink.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNSettingsLink.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
 
 #### Android
 
@@ -31,23 +20,21 @@
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-settings-link')
+      implementation project(':react-native-settings-link')
   	```
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNSettingsLink.sln` in `node_modules/react-native-settings-link/windows/RNSettingsLink.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Settings.Link.RNSettingsLink;` to the usings at the top of the file
-  - Add `new RNSettingsLinkPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
 
 ## Usage
 ```javascript
 import RNSettingsLink from 'react-native-settings-link';
 
-// TODO: What to do with the module?
-RNSettingsLink;
-```
-  
+and then call one of the methods, e.g.
+
+RNSettingsLink.locationSourceSettings();
+
+or to get access to Android's location settings. Good for when you want the user
+to enable their phone's location.
+
+RNSettingsLink.appDetailsSettings();
+
+to open activity to make changes to your app's settings. This is good if you are asking
+your user to change permissions for your application.

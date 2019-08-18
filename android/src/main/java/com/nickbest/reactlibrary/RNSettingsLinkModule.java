@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.nickbest.reactlibrary;
 
 import android.content.Intent;
 import android.provider.Settings;
